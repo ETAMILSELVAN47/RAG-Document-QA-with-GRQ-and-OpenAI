@@ -18,8 +18,8 @@ import openai
 os.environ['OPENAI_API_KEY']=os.getenv("OPENAI_API_KEY")
 os.environ['GROQ_API_KEY']=os.getenv("GROQ_API_KEY")
 
-openai.api_key=os.getenv(key='OPENAI_API_KEY')
-groq_api_key=os.getenv(key='GROQ_API_KEY')
+# openai.api_key=os.getenv(key='OPENAI_API_KEY')
+# groq_api_key=os.getenv(key='GROQ_API_KEY')
 
 llm=ChatGroq(model='llama3-8b-8192',groq_api_key=groq_api_key)
 
