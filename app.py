@@ -15,6 +15,7 @@ load_dotenv()
 
 import openai
 
+print('openAI API KEY:',os.getenv("OPENAI_API_KEY"))
 os.environ['OPENAI_API_KEY']=os.getenv("OPENAI_API_KEY")
 os.environ['GROQ_API_KEY']=os.getenv("GROQ_API_KEY")
 
