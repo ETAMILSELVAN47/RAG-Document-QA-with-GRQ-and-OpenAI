@@ -45,7 +45,7 @@ def create_vector_embedding():
         st.session_state.embedding=OpenAIEmbeddings(model="text-embedding-3-large")
         st.session_state.vectors=FAISS.from_documents(documents=st.session_state.final_doc,embedding=st.session_state.embedding)
 
-st.title('RAG Document Q&A with GRQ and OpenAI')
+st.title('RAG Document Q&A with GROQ and OpenAI')
 
 user_input=st.text_input('Enter your query from the research paper')
 

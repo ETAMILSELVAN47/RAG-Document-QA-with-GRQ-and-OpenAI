@@ -1,1 +1,1 @@
-# RAG-Document-QA-with-GRQ-and-OpenAI
+# RAG Document Q&A with GROQ and OpenAI
