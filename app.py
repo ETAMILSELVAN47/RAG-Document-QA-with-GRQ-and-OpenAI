@@ -15,8 +15,8 @@ load_dotenv()
 
 import openai
 
-os.environ['OPENAI_API_KEY']="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"
-os.environ['GROQ_API_KEY']="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"
+os.environ['OPENAI_API_KEY']=os.getenv(key='OPENAI_API_KEY')
+os.environ['GROQ_API_KEY']=os.getenv(key='GROQ_API_KEY')
 
 llm=ChatGroq(model='llama3-8b-8192')
 
