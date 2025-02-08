@@ -13,7 +13,9 @@ import time
 from dotenv import load_dotenv
 load_dotenv()
 
-os.environ['OPENAI_API_KEY']=os.getenv(key='OPENAI_API_KEY')
+import openai
+
+openai.api_key=os.getenv(key='OPENAI_API_KEY')
 os.environ['GROQ_API_KEY']=os.getenv('GROQ_API_KEY')
 
 llm=ChatGroq(model='llama3-8b-8192')
