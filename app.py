@@ -17,7 +17,9 @@ import openai
 from groq import Groq
 
 openai.api_key=os.getenv(key='OPENAI_API_KEY')
-Groq.api_key=os.getenv(key='GROQ_API_KEY')
+client = Groq(
+    api_key=os.environ.get("GROQ_API_KEY"),
+)
 
 llm=ChatGroq(model='llama3-8b-8192')
 
