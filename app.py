@@ -17,7 +17,7 @@ import openai
 
 openai.api_key=os.getenv(key='OPENAI_API_KEY')
 
-llm=ChatGroq(model='llama3-8b-8192',groq_api_key=os.getenv('GROQ_API_KEY'))
+llm=ChatGroq(model='llama3-8b-8192',groq_api_key=os.getenv(key='GROQ_API_KEY'))
 
 prompt=ChatPromptTemplate.from_template(
     """
