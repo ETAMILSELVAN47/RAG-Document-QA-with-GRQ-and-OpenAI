@@ -67,6 +67,8 @@ if user_input:
     end=time.process_time()
     st.write(response.get('answer'))
 
+    st.write(f'Response Time:{end-start}')
+
     with st.expander('Document Similarity Search'):
         for i,doc in enumerate(response.get('context')):
             st.write(doc.page_content)
